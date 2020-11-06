@@ -6,6 +6,14 @@ end
 function TeleportPlr(Player,X,Y,Z)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame + Vector3.new(X,Y,Z)
 end
+
+function NotifyMessage(Title, Text)
+game.StarterGui:SetCore("SendNotification", {
+    Title = Title;
+    Text = Text
+})
+end
+
 -- ROBLOXFUNC END --
 
 
@@ -13,5 +21,6 @@ end
 
 -- TeleportTo(Object,X,Y,Z) -- Object is the object to teleport to and X,Y,Z is the offset
 -- TeleportPlr(game.Players.USERNAME,X,Y,Z) -- game.Players.USERNAME and the offset
+-- NotifyMessage("Title","Text") -- Notify the LocalPlayer a certain message.
 
 -- EXAMPLES
