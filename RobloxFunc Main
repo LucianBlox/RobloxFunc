@@ -1,1 +1,17 @@
+-- ROBLOXFUNC START --
+function TeleportTo(Part,X,Y,Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Part.CFrame + Vector3.new(X,Y,Z)
+end
 
+function TeleportPlr(Player,X,Y,Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame + Vector3.new(X,Y,Z)
+end
+-- ROBLOXFUNC END --
+
+
+-- EXAMPLES
+
+-- TeleportTo(Object,X,Y,Z) -- Object is the object to teleport to and X,Y,Z is the offset
+-- TeleportPlr(game.Players.USERNAME,X,Y,Z) -- game.Players.USERNAME and the offset
+
+-- EXAMPLES
